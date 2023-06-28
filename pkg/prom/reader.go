@@ -725,6 +725,8 @@ func (h *httpAPI) QueryRange(ctx context.Context, query string, r Range) (model.
 	q := u.Query()
 	logger.Info("******************999*******************************", query)
 	fmt.Println("******************123456*******************************", query)
+	logger.Info("******************787878*******************************", u)
+	logger.Info("******************898989*******************************", q)
 	q.Set("query", query)
 	q.Set("start", formatTime(r.Start))
 	q.Set("end", formatTime(r.End))
